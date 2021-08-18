@@ -11,12 +11,12 @@ for iterm2 on MacOS
 
 * [iTerm2](https://iterm2.com/)
 * [bitwarden-cli](https://github.com/bitwarden/cli)
-    * if your brew user
+    * if you have brew
         ```
         $ brew install bitwarden-cli
         ```
 * [jq](https://stedolan.github.io/jq/)
-    * if your brew user
+    * if you have brew
         ```
         $ brew install jq
         ```
@@ -28,18 +28,18 @@ for iterm2 on MacOS
     $ which bw
     /usr/local/bin/bw
     ```
-    * Check response body same. If not, please report issue it.
-1. bitwarden-cli login. This need only once. If you already login, then skip this step.
+    * Check response body same. If not, please let me know through new issue.
+1. bitwarden-cli login. This need only once. If you are already login, then skip this step.
     ```
     $ bw login
     ```
-1. git clone to home directory. or download and unzip home directory. 
+1. git clone to home directory. or download and unzip home directory.
     * you must clone or unzip to home directory
     ```
     $ cd ~/
     $ git clone https://github.com/creatorKoo/bitwarden-iterm-helper.git
     ```
-1. Save your bitwarden item info by below rule.
+1. Save your ssh server info to bitwarden item by below rule.
     * name field
         * your item name
     * username field
@@ -56,7 +56,7 @@ for iterm2 on MacOS
         ```
         $ ssh ssh-user-name:ssh-password@ssh.server.domain.com
         ```
-1. save bw password to iTerm
+1. save bitwarden master password to iTerm
     1. Open iTerm
     1. Window -> password manager
     1. Add bitwarden master password
@@ -65,8 +65,8 @@ for iterm2 on MacOS
     1. Open preferences and go profiles tab
     1. Make new profile for helper
     1. Set auto ssh connect
-        * ![iTerm-profile-image-example](https://raw.githubusercontent.com/creatorKoo/bitwarden-iterm-helper/main/img/iTerm-profile-image-example.png)
         * ~/bitwarden-iterm-helper/ssh_connect.sh "<ssh_info_bitwarden_item_name>"
+        * ![iTerm-profile-image-example](https://raw.githubusercontent.com/creatorKoo/bitwarden-iterm-helper/main/img/iTerm-profile-image-example.png)
     1. profile -> Advanced -> Triggers -> Edit
         * ![iTerm-profile-advanced-tab-example](https://raw.githubusercontent.com/creatorKoo/bitwarden-iterm-helper/main/img/iTerm-profile-advanced-tab-example.png)
         * ![iTerm-profile-triggers-example](https://raw.githubusercontent.com/creatorKoo/bitwarden-iterm-helper/main/img/iTerm-profile-triggers-example.png)
