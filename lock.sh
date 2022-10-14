@@ -1,7 +1,6 @@
 #!/bin/sh
 
-source ~/bitwarden-iterm-helper/config.sh
+source ~/bitwarden-iterm-helper/session.sh
 
-bw lock 2>/dev/null >/dev/null
-
-rm -rf $SESSION_PATH
+bw lock
+deleteSession
